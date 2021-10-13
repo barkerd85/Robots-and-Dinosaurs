@@ -1,6 +1,9 @@
-import Robot
-import Dinosaur
-import Weapon
+from Robot import Robot
+from Dinosaur import Dinosaur
+from Weapon import Weapon
+from Fleet import Fleet
+from Herd import Herd
+
 
 
 laser = Weapon('laserbeam', 10)
@@ -15,3 +18,12 @@ robot3 = Robot('DB-7500', 1000, one_punch)
 dino1 = Dinosaur('T-rex', 350, 15)
 dino2 = Dinosaur('Raptor', 450, 100)
 dino3= Dinosaur('Hybrid', 800, 4000)
+
+
+fleet = Fleet([robot1,robot2,robot3])
+
+herd = Herd([dino1,dino2,dino3])
+
+
+
+
